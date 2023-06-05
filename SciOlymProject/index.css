@@ -1,0 +1,107 @@
+.titlePageTable
+{
+    background-color: rgb(1, 77, 16);
+}
+
+.titleCell
+{
+    width: 85%;
+    font-size: 50px; 
+    padding-left: 25%;
+    color: aliceblue;
+}
+
+.logo 
+{
+    width: 50%;
+    height: 20%;
+    padding-left: 50px;
+    
+}
+
+.logoCell
+{
+    width: 300px;
+}
+
+.menuList
+{
+    list-style-type: none;
+}
+
+ul.menuList li
+{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+table.contentTable td
+{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    vertical-align: top;
+}
+
+.mainBody
+{
+    background-color: rgb(3, 99, 99);
+}
+
+.contentTable 
+{
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(104, 184, 101);
+}
+
+.frontPageCalendar
+{
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+.frontPageNews
+{
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+.frontPageResults
+{
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+
+.frontPageTColumn
+{
+    width: 50%;
+    height: 500px;
+}
+
+.sectionHeader
+{
+    font-family: verdana, sans-serif;
+    font-size: 25pt;
+}
+
+table.innerCalendar td
+{
+    border-style: solid;
+    border-color: black;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>WSHS Science Olympiad</title>
+        <link rel="stylesheet" href="index.css">
+        <script>
+            function init(){
+                /*alert('Have you paid your dues?');
+                alert('If not please visit payment page.'); */
+                var events = [
+                              "9/28/2022", "Meeting",
+                              "10/12/2022", "Meeting: Decide events and fill out Google Form for event selection.", 
+                              "10/26/2022", "Meeting: Meet with your partners and exchange contact information.", 
+                              "11/9/2022", "Meeting: Designated study session for It's about Time, Write it do it, Anatomy, Fermi Questions, Forensics, and Rocks and Minerals. Feel free to use time however you want if your event is not listed.",
+                              "11/23/2022", "Meeting: Designated Study Session for Block A, B, C, D. Any other Blocks can do anything else that they want.",
+                              "12/7/2022", "Meeting: Designated Study Session for Block E,F,G. Any other Blocks can do anything else that they want.",
+                              "12/14/2022", "Meeting: Check-in for all Blocks and teams. Participation is mandatory.",
+                              "01/17/2023", "Invitationals (At WSHS)"
+                            ];  
+                console.log(events);
+                var eventTableDiv = document.getElementById('calendarSection');
+                var innerCalendarTable = document.createElement("table");
+                eventTableDiv.appendChild(innerCalendarTable);
+                
+                addCalendarEvent(innerCalendarTable, "9/28/2022", "Meeting");
+                
+                addCalendarEvent(innerCalendarTable, "10/12/2022", "Meeting: Decide events and fill out Google Form for event selection.");
+                
+                addCalendarEvent(innerCalendarTable, "10/26/2022", "Meeting: Meet with your partners and exchange contact information.");
+                
+                addCalendarEvent(innerCalendarTable, "11/9/2022", "Meeting: Designated Study Session for Block A, B, C, D. Any other Blocks can do anything else that they want.");
+                
+                /*var innerCalendarTr1 = document.createElement("tr");
+                innerCalendarTable.appendChild(innerCalendarTr1);
+                var innerCalendarDateTd1 = document.createElement("td");
+                innerCalendarTr1.appendChild(innerCalendarDateTd1);
+                var innerCalendarDescriptionTd1 = document.createElement("td");
+                innerCalendarTr1.appendChild(innerCalendarDescriptionTd1);
+                
+                var innerCalendarTextNode1 = document.createTextNode("9/28/2022");
+                innerCalendarDateTd1.appendChild(innerCalendarTextNode1);
+                var innerCalendarTextNode2 = document.createTextNode("Meeting");
+                innerCalendarDescriptionTd1.appendChild(innerCalendarTextNode2);
+                
+                var innerCalendarTr2 = document.createElement("tr");
+                innerCalendarTable.appendChild(innerCalendarTr2);
+                var innerCalendarDateTd2 = document.createElement("td");
+                innerCalendarTr2.appendChild(innerCalendarDateTd2);
+                var innerCalendarDescriptionTd2 = document.createElement("td");
+                innerCalendarTr2.appendChild(innerCalendarDescriptionTd2);
+                
+                var innerCalendarTextNode3 = document.createTextNode("10/12/2022");
+                innerCalendarDateTd2.appendChild(innerCalendarTextNode3);
+                var innerCalendarTextNode4 = document.createTextNode("Meeting: Decide events and fill out Google Form for event selection.");
+                innerCalendarDescriptionTd2.appendChild(innerCalendarTextNode4); */
+                
+                console.log(eventTable);
+            }
+            
+            function addCalendarEvent(table, date, description){
+                
+                
+                var innerCalendarTr = document.createElement("tr");
+                table.appendChild(innerCalendarTr);
+                var innerCalendarDateTd = document.createElement("td");
+                innerCalendarTr.appendChild(innerCalendarDateTd);
+                var innerCalendarDescriptionTd = document.createElement("td");
+                innerCalendarTr.appendChild(innerCalendarDescriptionTd);
+                
+                var innerCalendarTextNode1 = document.createTextNode(date);
+                innerCalendarDateTd.appendChild(innerCalendarTextNode1);
+                var innerCalendarTextNode2 = document.createTextNode(description);
+                innerCalendarDescriptionTd.appendChild(innerCalendarTextNode2);
+            }
+            
+            
+            
+        </script>
+    </head>
+    
+    <body onload="init()">
+        <table class="titlePageTable">
+            <tr>
+                <td class="logoCell"><img class="logo" src="images/West_Springfield_High_School_Logo.svg.png"></td>
+                <td class="titleCell"><div class="title">WSHS Science Olympiad</div></td>
+            </tr>
+        </table>
+        
+        <hr>
+        <ul class="menuList">
+            
+            <li>Organization</li>
+            <li>Overall Schedule</li>
+            <li>Events</li>
+            <li>Resources</li>
+            <li>Results</li>
+            <li>Membership Dues</li>
+            
+        </ul>
+        
+        <br>
+        <br>
+        
+        <hr>
+        
+        <div class="mainBody">
+            <table class="contentTable">
+                <tr>
+                    <td class="frontPageCalendar frontPageTColumn">
+                        
+                        <div class="sectionHeader">CALENDAR</div>
+                        <br>
+                        <br>
+                        <div id="calendarSection">
+                            <!-- <table class="innerCalendar">
+                                <tr>
+                                    <td>9/28/2022</td>
+                                    <td>Meeting</td>
+                                </tr>
+                                <tr>
+                                    <td>10/12/2022</td> 
+                                    <td>Meeting: Decide events and fill out Google Form for event selection.</td>
+               
+                                <tr>    
+                                    <td>10/26/2022</td>
+                                    <td>Meeting: Meet with your partners and exchange contact information.</td>
+                                </tr>
+                                <tr>
+                                    <td>11/9/2022</td> 
+                                    <td>Meeting: Designated study session for It's about Time, Write it do it, Anatomy, Fermi Questions, Forensics, and Rocks and Minerals. Feel free to use time however you want if your event is not listed.</td>
+                                </tr>
+                                <tr>
+                                    <td>11/23/2022</td> 
+                                    <td>Meeting: Designated Study Session for Block A, B, C, D. Any other Blocks can do anything else that they want.</td>
+                                </tr>
+                                <tr>
+                                    <td>12/7/2022</td> 
+                                    <td>Meeting: Designated Study Session for Block E,F,G. Any other Blocks can do anything else that they want.</td>
+                                </tr>
+                                <tr>
+                                    <td>12/14/2022</td> 
+                                    <td>Meeting: Check-in for all Blocks and teams. Participation is mandatory.</td>
+                                </tr>
+                                <tr>
+                                    <td>January 2023</td> 
+                                    <td>Invitationals (At WSHS)</td>
+                                </tr>
+                            </table> -->
+                        </div>
+                        
+                    </td>
+                    <td class="frontPageNews frontPageTColumn" rowspan="2">
+                        <div class="sectionHeader">UPDATES/NEWS</div>
+                        <br>
+                        <br>
+                        <div>
+                            Contact with your event partners, so that you know what time you can meet and study together. For building event, contact each other to sort out the materials and design. <br> <br>
+                            Study Sessions will be held at Pohick Library during the weekends. Fill out the form to inform us on what days you are free, so that we can reserve a room for different groups. <br> <br>
+                            Make sure to fill out the forms for event selection before our next meeting on 9/28/2022, so that the captains can assign everyone events. <br> <br>
+                            Invitationals for WSHS has been pushed back from December to January. Feel free to communicate with team leaders to schedule more practice sessions outside of school. We have another month to prepare. Have a great holiday break! <br> <br>
+                            
+                        </div>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "frontPageResults">
+                        <div class="sectionHeader">Results</div>
+                        <div>
+                            <br>
+                            <div>This year: N/a</div>
+                            <div>Last year: Medals at Regionals, made States and placed in one event.</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+    
+</html>

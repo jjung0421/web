@@ -6,3 +6,5 @@ This website was created for the use of the West Springfield HS Science Olympiad
 Joshua Jung 
 joshuathj@gmail.com
 
+Steven Yang
+sungshik.yang@gmail.com

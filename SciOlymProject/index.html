@@ -22,37 +22,12 @@
                 var innerCalendarTable = document.createElement("table");
                 eventTableDiv.appendChild(innerCalendarTable);
                 
-                addCalendarEvent(innerCalendarTable, "9/28/2022", "Meeting");
+                for(var i = 0; i < events.length - 1; i = i +2){
                 
-                addCalendarEvent(innerCalendarTable, "10/12/2022", "Meeting: Decide events and fill out Google Form for event selection.");
+                    addCalendarEvent(innerCalendarTable, events[i], events[i+1]);
                 
-                addCalendarEvent(innerCalendarTable, "10/26/2022", "Meeting: Meet with your partners and exchange contact information.");
+                }
                 
-                addCalendarEvent(innerCalendarTable, "11/9/2022", "Meeting: Designated Study Session for Block A, B, C, D. Any other Blocks can do anything else that they want.");
-                
-                /*var innerCalendarTr1 = document.createElement("tr");
-                innerCalendarTable.appendChild(innerCalendarTr1);
-                var innerCalendarDateTd1 = document.createElement("td");
-                innerCalendarTr1.appendChild(innerCalendarDateTd1);
-                var innerCalendarDescriptionTd1 = document.createElement("td");
-                innerCalendarTr1.appendChild(innerCalendarDescriptionTd1);
-                
-                var innerCalendarTextNode1 = document.createTextNode("9/28/2022");
-                innerCalendarDateTd1.appendChild(innerCalendarTextNode1);
-                var innerCalendarTextNode2 = document.createTextNode("Meeting");
-                innerCalendarDescriptionTd1.appendChild(innerCalendarTextNode2);
-                
-                var innerCalendarTr2 = document.createElement("tr");
-                innerCalendarTable.appendChild(innerCalendarTr2);
-                var innerCalendarDateTd2 = document.createElement("td");
-                innerCalendarTr2.appendChild(innerCalendarDateTd2);
-                var innerCalendarDescriptionTd2 = document.createElement("td");
-                innerCalendarTr2.appendChild(innerCalendarDescriptionTd2);
-                
-                var innerCalendarTextNode3 = document.createTextNode("10/12/2022");
-                innerCalendarDateTd2.appendChild(innerCalendarTextNode3);
-                var innerCalendarTextNode4 = document.createTextNode("Meeting: Decide events and fill out Google Form for event selection.");
-                innerCalendarDescriptionTd2.appendChild(innerCalendarTextNode4); */
                 
                 console.log(eventTable);
             }
@@ -112,40 +87,7 @@
                         <br>
                         <br>
                         <div id="calendarSection">
-                            <!-- <table class="innerCalendar">
-                                <tr>
-                                    <td>9/28/2022</td>
-                                    <td>Meeting</td>
-                                </tr>
-                                <tr>
-                                    <td>10/12/2022</td> 
-                                    <td>Meeting: Decide events and fill out Google Form for event selection.</td>
-               
-                                <tr>    
-                                    <td>10/26/2022</td>
-                                    <td>Meeting: Meet with your partners and exchange contact information.</td>
-                                </tr>
-                                <tr>
-                                    <td>11/9/2022</td> 
-                                    <td>Meeting: Designated study session for It's about Time, Write it do it, Anatomy, Fermi Questions, Forensics, and Rocks and Minerals. Feel free to use time however you want if your event is not listed.</td>
-                                </tr>
-                                <tr>
-                                    <td>11/23/2022</td> 
-                                    <td>Meeting: Designated Study Session for Block A, B, C, D. Any other Blocks can do anything else that they want.</td>
-                                </tr>
-                                <tr>
-                                    <td>12/7/2022</td> 
-                                    <td>Meeting: Designated Study Session for Block E,F,G. Any other Blocks can do anything else that they want.</td>
-                                </tr>
-                                <tr>
-                                    <td>12/14/2022</td> 
-                                    <td>Meeting: Check-in for all Blocks and teams. Participation is mandatory.</td>
-                                </tr>
-                                <tr>
-                                    <td>January 2023</td> 
-                                    <td>Invitationals (At WSHS)</td>
-                                </tr>
-                            </table> -->
+                            
                         </div>
                         
                     </td>
